@@ -5,7 +5,7 @@ About.propTypes = {
     
 };
 
-function About(props) {
+function About(props) { 
     return (
         <div>
             
