@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import Hello from './test/Hello';
 import Welcome from './test/Welcome';
-import World from './test/World';
 import {BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App () {
