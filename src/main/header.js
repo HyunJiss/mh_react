@@ -1,19 +1,21 @@
 import React from 'react';
 import mhholdingsLogo from '../img/mhholdingsLogo.png';
+import {Link} from 'react-router-dom';
 import '../css/main.css';
 const Header = () => {
   return (
     <>
-    <div className="h_wrap">
-      <h1 className="logo"><a><img src={mhholdingsLogo} /></a></h1>
-      <span id="m_buttom"></span>
-      <nav id="menu">
-        <a className="menu-links">BUSINESS</a>
-        <a className="menu-links">HEALTH COLUMN</a>
-        <a className="menu-links">COMPANY</a>
-        <a className="menu-links">CONTACT US</a>
-      </nav>
-    </div>
+    <header id="header">
+      <div className="h_wrap">
+        <h1 className="logo"><a><img src={mhholdingsLogo} /></a></h1>
+        <nav id="menu">
+        <Link to={'/main'} className="menu-links">BUSINESS</Link>
+        <Link to={'/main1'} className="menu-links">HEALTH COLUMN</Link>
+        <Link to={'/main2'} className="menu-links">COMPANY</Link>
+        <Link to={'/main3'} className="menu-links">CONTACT US</Link>
+        </nav>
+      </div>
+    </header>
     </>
   );
 };
