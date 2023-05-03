@@ -1,0 +1,46 @@
+#header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  top: 0;
+  margin: 0;
+  z-index: 9;
+}
+.h_wrap {
+  display: table;
+  width: 63%;
+  margin: 0 auto;
+}
+.logo {
+  width: 20%;
+  float: left;
+  margin-right: 1.6rem;
+}
+.logo > a > img {
+  vertical-align: middle;
+  width: 66%;
+}
+#menu {
+  display: block;
+  float: right;
+  height: 5rem;
+  line-height: 5rem;
+  margin: 0px auto;
+}
+#menu .menu-links {
+  font-family: Noto Sans KR;
+  font-size: 1.1rem;
+  color: #1e3060;
+  letter-spacing: 0.2px;
+  margin-right: 2rem;
+  display: block;
+  float: left;
+}
+#menu .menu-links:last-child {
+  margin-right: 0px;
+}
+#menu a {
+  text-decoration: none;
+}
