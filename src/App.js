@@ -6,12 +6,12 @@ import Main from "./main/Main.js";
 function App() {
   return (
     <>
+      <Main/>
       <BrowserRouter>
         <Header/>
         <Main/>
         <Routes>
           <Route path="/main" element={<Header />} />
-          <Route path="/main1" element={<Main />} />
         </Routes>
       </BrowserRouter>
     </>
