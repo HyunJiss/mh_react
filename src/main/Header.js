@@ -1,17 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import '../css/Header.css';
 const Header = () => {
   return (
     <>
     <header id="header">
       <div className="h_wrap">
-        <h1 className="logo"><Link><img alt="로고" src="/img/mhholdingsLogo.png" /></Link></h1>
+        <h1 className="logo"><a href="#!"><img alt="로고" src="/img/mhholdingsLogo.png" /></a></h1>
         <nav id="menu">
-        <Link to={'/main'} className="menu-links">BUSINESS</Link>
-        <Link to={'/main'} className="menu-links">HEALTH COLUMN</Link>
-        <Link to={'/main'} className="menu-links">COMPANY</Link>
-        <Link to={'/main'} className="menu-links">CONTACT US</Link>
+        <a href="#!" className="menu-links">BUSINESS</a>
+        <a href="#!" className="menu-links">HEALTH COLUMN</a>
+        <a href="#!" className="menu-links">COMPANY</a>
+        <a href="#!" className="menu-links">CONTACT US</a>
         </nav>
       </div>
     </header>

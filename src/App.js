@@ -7,7 +7,10 @@ import Footer from "./main/Footer.js";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Header/>
+      <Main/>
+      <Footer/>
+      {/* <BrowserRouter>
         <Header/>
         <Main/>
         <Routes>
@@ -15,7 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Main/>
-      <Footer/>
+      <Footer/> */}
     </>
   );
      
