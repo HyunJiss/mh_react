@@ -6,20 +6,13 @@ import Footer from "./main/Footer.js";
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Main/>
-      <Footer/>
-      {/* <BrowserRouter>
-        <Header/>
-        <Main/>
+    <BrowserRouter>
+       <Header/>
         <Routes>
-          <Route path="/main" element={<Header />} />
+          <Route path='/' element={<Main />} />
         </Routes>
-      </BrowserRouter>
-      <Main/>
-      <Footer/> */}
-    </>
+      <Footer/>
+    </BrowserRouter>
   );
      
 }
