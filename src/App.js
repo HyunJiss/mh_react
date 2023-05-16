@@ -1,24 +1,20 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+// import {BrowserRouter, Routes, Route} from "react-router-dom";
+import './css/common.css';
 import Header from "./main/Header.js";
 import Main from "./main/Main.js";
-import Footer from "./main/Footer.js";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+    <Header/>
+    <Main/>
       {/* <BrowserRouter>
         <Header/>
-        <Main/>
         <Routes>
-          <Route path="/main" element={<Header />} />
+          <Route path="/" element={<Main />} />
         </Routes>
-      </BrowserRouter>
-      <Main/>
-      <Footer/> */}
+      </BrowserRouter> */}
     </>
   );
      

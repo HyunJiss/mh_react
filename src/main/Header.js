@@ -5,7 +5,7 @@ const Header = () => {
     <>
     <header id="header">
       <div className="h_wrap">
-        <h1 className="logo"><a href="#!"><img alt="로고" src="/img/mhholdingsLogo.png" /></a></h1>
+        <h1 className="logo"><img alt="로고" src="/img/mhholdingsLogo.png" /></h1>
         <nav id="menu">
         <a href="#!" className="menu-links">BUSINESS</a>
         <a href="#!" className="menu-links">HEALTH COLUMN</a>
