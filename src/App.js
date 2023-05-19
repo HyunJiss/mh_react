@@ -1,14 +1,14 @@
 import React from "react";
 // import {BrowserRouter, Routes, Route} from "react-router-dom";
-import './css/common.css';
+import "./css/Common.css";
 import Header from "./main/Header.js";
 import Main from "./main/Main.js";
 
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>
+      <Header />
+      <Main />
       {/* <BrowserRouter>
         <Header/>
         <Routes>
