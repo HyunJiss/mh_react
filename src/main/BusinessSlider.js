@@ -1,22 +1,36 @@
 import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import styled from "styled-components";
 const BusinessSlider = () => {
 
   const settings={
+    cssEase: 'linear',
+    arrows:true,
     dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll :1,
-    autoplay:true
+    customPaging: function(i) {
+      return (
+        <>
+        <strong>
+          {'0' + (i+1)}
+          <span>{'/'}</span>
+        </strong>{'05'}
+        </>
+      );
+    },
+    responsive : 
+        [{
+          breakpoint: 1025,
+          settings: 
+          {
+            centerPadding:'0',
+            variableWidth:false
+          }
+        }]
   };
 
   return (
-     <div className="business_slider_wrap" style={{width:'1200px'}}>
-      <StyledSlider {...settings}>
+    <div className="business_slider_wrap">
+       <Slider {...settings}>
         <div>
           <p className="busi_info">
             <span className="site_name">이메딕</span>
@@ -37,7 +51,7 @@ const BusinessSlider = () => {
           <p className="busi_info">
             <span className="site_name">아이메딕</span>
             <span className="site_sub_info">대학교, 산업체, 공기관, 사회복지시설에서 근무하시는 간호사선생님들을 위한 의약품 정보를 제공합니다.</span>
-            <span className="site_sub_btn"><a href="http://http://www.i-medic.co.kr" target="_blank" rel="noreferrer" >바로가기 <img alt="" src="/img/busi_site_go.png" className="busi_site_go"/></a></span>
+            <span className="site_sub_btn"><a href="http://www.i-medic.co.kr" target="_blank" rel="noreferrer" >바로가기 <img alt="" src="/img/busi_site_go.png" className="busi_site_go"/></a></span>
           </p>
           <p className="busi_info_img"><img alt="" src="/img/busi_site2.png"/></p>
         </div>
@@ -57,13 +71,9 @@ const BusinessSlider = () => {
           </p>
           <p className="busi_info_img"><img alt="" src="/img/busi_site4.png"/></p>
         </div>
-      </StyledSlider>
+      </Slider>
     </div>
   );
 };
 
 export default BusinessSlider;
-
-const StyledSlider = styled(Slider)`
-
-`;
