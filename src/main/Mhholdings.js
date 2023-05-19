@@ -5,10 +5,10 @@ const Mhholdings = () => {
   return (
     <div className="section active" id="section0">
           <div id="content0">
-            <div className="main_sub_title">
+            <div className="main_sub_title animated">
               <span className="point_font">M</span><span className="font_st">arketing</span><span className="point_font">H</span><span className="font_st">ope</span><span>MHholdings</span>
             </div>
-            <div className="main_title">
+            <div className="main_title animated">
             <strong>
               <span style={{letterSpacing:'-7.8px'}}>희</span>
               <span style={{letterSpacing:'-1px'}}>망</span>

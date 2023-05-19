@@ -1,11 +1,20 @@
 import React from 'react';
-import CommonBack from './CommonBack';
 
 const Company = () => {
   return (
-    <div className="section section4" id="section4">
+    <div className="section" id="section4" style={{height:'929px',position:'relative', tableLayout:'fixed',width:'100%'}}>
       <h2 className="company_title">COMPANY</h2>
-      <CommonBack />
+      <div className="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className="common_back">
+        <div className="gone"><img alt="" src="/img/greenone_c.png"/></div>
+        <div className="wone"><img alt="" src="/img/whiteone.png"/></div>
+        <div className="yone"><img alt="" src="/img/yellowone.png"/></div>
+        <div className="mone"><img alt="" src="/img/MHone.png"/></div>
+      </div>
       <div className="company_info_wrap">
         <p className="company_pic"><img alt="" src="/img/company_pic.png"/></p>
         <p className="company_info_title">안녕하세요.<br/><span className="mh_text">엠에취홀딩스</span>에 오신것을 환영합니다.</p>

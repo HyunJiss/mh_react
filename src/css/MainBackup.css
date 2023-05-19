@@ -1,6 +1,8 @@
-#m_buttom{background:'url(/img/m_btn.png)' no-repeat; display:none;}
-#main_top {width:100%;height:656px;background-image:'url(/img/bg_pattern.jpg)';margin:0 auto;text-align:center;}
-#main_top_sub {width:1400px;height:656px;background-image:'url(/img/main_top1400.jpg)';background-repeat:no-repeat;margin:0 auto;padding:0px;}
+@CHARSET "EUC-KR";
+/*All Device*/
+#m_buttom{background:url(../img/main/m_btn.png)no-repeat; display:none;}
+#main_top {width:100%;height:656px;background-image:url(../img/main/bg_pattern.jpg);margin:0 auto;text-align:center;}
+#main_top_sub {width:1400px;height:656px;background-image:url(../img/main/main_top1400.jpg);background-repeat:no-repeat;margin:0 auto;padding:0px;}
 #head {width:1400px; height:50px; margin:0 auto; padding-top:35px; text-align:center; }
 #mh_logo {width:50%; height:50px; float:left;}
 #mh_logo img {margin-left:-100px;}
@@ -20,10 +22,17 @@
 #section2 .common_back div.whone{left:6%; top:70%;}
 
 .head-wrap{height:80px;}
+#header {position: fixed;display: block;width: 100%;height:5rem;background-color: #fff;top: 0;margin: 0;z-index: 9;}
 #fullpage{height:100%;position:relative; transition : all 700ms ease 0s;transform: translate3d(0px,0px,0px);}
 #section0 > ul{display: table;position: fixed;left: 0;top: 0;z-index: 0;width: 100%;height: 100%;table-layout: fixed;}
 #section0 > ul{ padding:0px; padding-top:44px;}
-
+.logo{width:20%; float:left;margin-right: 1.6rem;}
+.logo > a > img{vertical-align:middle; width:66%;}
+#menu{ display:block;float:right;height:5rem;line-height:5rem;margin: 0px auto;}
+#menu .menu-links{font-family:Noto Sans KR; font-size:1.1rem; color:#1e3060;letter-spacing:0.2px; margin-right:2rem; display: block; float: left;}
+#menu .menu-links:last-child{margin-right:0px;}
+#menu a{text-decoration:none;}
+.h_wrap{display:table; width:63%; margin:0 auto;}
 #footer{width:100%; height:80px;line-height:80px; background:#fff; }
 #footer .footer{height:80px; line-height:80px; margin-left:30%; }
 #footer .footer #fnb{width:15%; float:left;}
@@ -85,8 +94,8 @@ width:74px; text-align:left; height: 24px; line-height: 24px; border-radius: 11p
 #section1 .busi_info span.site_sub_info{font-family:Noto Sans KR; font-size:36px;}
 #section1 .busi_info .busi_site_go{position:absolute;right:11px;top:6px;width:14%;     -webkit-transition: .25s cubic-bezier(.075,.82,.165,1); transition: .25s cubic-bezier(.075,.82,.165,1);}
 #section1 .busi_info:hover .busi_site_go{right: 5px;}
-#section1 .slick-prev{background: 'url(/img/mh_arrow_l.png)' no-repeat; cursor:pointer; border:none; outline:none; width:100%; height:100%; text-indent:-9999px;position:absolute; top:44%; left:0.5%; z-index:1;}
-#section1 .slick-next{background: 'url(/img/mh_arrow_r.png)' no-repeat; cursor:pointer; border:none; outline:none; width:100%; height:100%; text-indent:-9999px;position:absolute; top:44%; right:-94.5%; z-index:1;}
+#section1 .slick-prev{background: url(../img/main/mh_arrow_l.png) no-repeat; cursor:pointer; border:none; outline:none; width:100%; height:100%; text-indent:-9999px;position:absolute; top:44%; left:0.5%; z-index:1;}
+#section1 .slick-next{background: url(../img/main/mh_arrow_r.png) no-repeat; cursor:pointer; border:none; outline:none; width:100%; height:100%; text-indent:-9999px;position:absolute; top:44%; right:-94.5%; z-index:1;}
 
 /*HEALTH COLUMN*/
 #section2{background:#fbf4d8; position:relative;}
@@ -97,10 +106,10 @@ width:74px; text-align:left; height: 24px; line-height: 24px; border-radius: 11p
 #section2 ul{width:1400px; height:42%; margin:7% auto 0%;} 
 #section2 ul li{width:306px; height:383px; float:left; position:relative;}
 #section2 ul li.column{font-family: Noto Sans KR; font-size: 15px; color: #333; }
-#section2 ul li.column.back1{background:'url(/img/health1.png)' no-repeat; margin-right:30px;}
-#section2 ul li.column.back2{background:'url(/img/health2.png)' no-repeat; margin-right:30px;}
-#section2 ul li.column.back3{background:'url(/img/health3.png)' no-repeat; margin-right:30px;}
-#section2 ul li.column.back4{background:'url(/img/health4.png)' no-repeat; margin-right:30px;}
+#section2 ul li.column.back1{background:url(../img/main/health1.png) no-repeat; margin-right:30px;}
+#section2 ul li.column.back2{background:url(../img/main/health2.png) no-repeat; margin-right:30px;}
+#section2 ul li.column.back3{background:url(../img/main/health3.png) no-repeat; margin-right:30px;}
+#section2 ul li.column.back4{background:url(../img/main/health4.png) no-repeat; margin-right:30px;}
 
 #section2 ul li.column span.column_cate{display:block; width:80%; position:absolute; color:#444; top:53%; left:11%; z-index: 12;}
 #section2 ul li.column span.column_cate_title{display:block;width:72%;display:block; line-height:19px;position:absolute;color:#444;top:61%;left:11%;z-index: 12;}
@@ -127,8 +136,8 @@ color: #fff; font-size: 18px;left: 45%;top: 31%;}
 #section2 .health_column_wrap .slick-slide{width:330px !important; float:left !important;}
 #section2 ul li.column:nth-child(2) > img {position: absolute;left: -5px;top: -5px;}
 
-#prev_btn{position:absolute;top:0;left:0;background:'url(/img/f_prev.png)' no-repeat;}
-#next_btn{position:absolute;top:0;right:0;background:'url(/img/f_next.png)' no-repeat;}
+#prev_btn{position:absolute;top:0;left:0;background:url(../img/main/f_prev.png) no-repeat;}
+#next_btn{position:absolute;top:0;right:0;background:url(../img/main/f_next.png) no-repeat;}
 .btn{width:100px;height:600px;border:0;display:none;cursor:pointer}:focus{outline:0}
 #slider{position:relative;margin:0 auto;padding:0;list-style:none;width:500px;height:600px;overflow-x:hidden;overflow-y:hidden}
 #slider li{display:none;position:absolute;left:0;top:0}
@@ -192,7 +201,7 @@ color: #fff; font-size: 18px;left: 45%;top: 31%;}
 #section3 .locadl2 dt.mailtit{width:11%;}
 
 /*회사소개*/
-#section4 {display: block; height: auto; background-color:#ebf1c1; font-family:Noto Sans KR; font-size: 0.75rem; color: rgba(255, 255, 255, 0.5);font-weight: 400;text-align: center;}
+#section4 {display: block; height: auto !important; background-color:#ebf1c1; font-family:Noto Sans KR; font-size: 0.75rem; color: rgba(255, 255, 255, 0.5);font-weight: 400;text-align: center;}
 #section4 .company_title{width:100%; text-align:center; font-size:38px; font-family: Noto Sans KR; color:#1E3060; position:absolute; top:14%;}
 #section4 .company_info_wrap{font-size:1.1rem; color:#444; text-align:left; line-height:26px; position:absolute; top:34%; left:20%;}
 .company_pic{position: absolute; right: -22%; top: -17%;}
@@ -229,3 +238,10 @@ color: #fff; font-size: 18px;left: 45%;top: 31%;}
 #fp-nav .fp-tooltip {overflow: hidden;position: absolute;top: 2px; width: 198px;height:27px;line-height:32px;font-weight:500; font-size:13px; color: #1E3060; opacity:0.5; font-family:Noto Sans KR; white-space: nowrap; letter-spacing:0px; cursor: pointer;}
 #fp-nav .fp-tooltip::before { display: inline-block; width: 4rem; height: 1.5rem; content: ''; vertical-align: middle;}
 #fp-nav .active + .fp-tooltip{color:#1E3060;; opacity:1;}
+
+
+ /* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .health_container{background:#fff; width: 757px; height: 766px; left:30%; top:11%;position: absolute;}
+}
+
